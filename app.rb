@@ -17,7 +17,10 @@ get "/" do
 end
 
 post "/" do
-  
+  puts "=== REQUEST ==="
+  puts request.inspect
+  puts "=== PARAMS ==="
+  puts params.inspect
 end
 
 get "/*" do
