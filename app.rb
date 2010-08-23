@@ -2,8 +2,6 @@ require 'rubygems'
 gem "rack", '~> 1.2.1'
 require 'sinatra'
 require 'action_view'
-require 'sinatra/content_for'
-require 'sinatra/ratpack'
 require 'insightful'
 require 'broadway'
 require 'haml'
@@ -22,8 +20,6 @@ helpers do
     LOGGER
   end
 end
-
-Ubiquitously.configure("config/_secret.yml")
 
 helpers do
   include Insightful
