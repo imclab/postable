@@ -1,7 +1,5 @@
 require 'rubygems'
 require 'sinatra'
-require 'insightful'
-require 'broadway'
 require 'haml'
 require 'json'
 require 'open-uri'
