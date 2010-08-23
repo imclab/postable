@@ -1,6 +1,5 @@
 require 'rubygems'
 require 'sinatra'
-require 'action_view'
 require 'insightful'
 require 'broadway'
 require 'haml'
@@ -22,10 +21,6 @@ end
 
 helpers do
   include Insightful
-  include ActionView::Helpers::TextHelper
-  include ActionView::Helpers::TagHelper
-  include ActionView::Helpers::SanitizeHelper
-  extend ActionView::Helpers::SanitizeHelper::ClassMethods
   def nested_path(post)
     post.path
   end
