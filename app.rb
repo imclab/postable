@@ -5,13 +5,6 @@ require 'sinatra'
 require 'haml'
 require 'json'
 
-helpers do
-  include Insightful
-  def nested_path(post)
-    post.path
-  end
-end
-
 this = File.expand_path(File.dirname(__FILE__))
 SITE = Broadway.build(:source => "#{this}/_content", :settings => "#{this}/_config.yml")
 
