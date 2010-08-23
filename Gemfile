@@ -1,3 +1,6 @@
+source "http://rubygems.org"
+source "http://gemcutter.org"
+
 gem "RedCloth"
 gem "maruku"
 gem "rack"
