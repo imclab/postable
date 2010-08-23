@@ -1,19 +1,9 @@
 require 'rubygems'
 require 'sinatra'
+#require 'insightful'
+#require 'broadway'
 require 'haml'
 require 'json'
-require 'open-uri'
-
-configure do
-  LOGGER = Logger.new("tmp/development.log") 
-  LOGGER.level = Logger::INFO
-end
-
-helpers do
-  def logger
-    LOGGER
-  end
-end
 
 helpers do
   include Insightful
