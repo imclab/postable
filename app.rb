@@ -23,11 +23,3 @@ post "/" do
   puts params.inspect
   ""
 end
-
-get "/*" do
-  ""
-end
-
-not_found do
-  ""
-end
