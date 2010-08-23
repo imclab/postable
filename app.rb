@@ -1,7 +1,7 @@
 require 'rubygems'
 require 'sinatra'
 #require 'insightful'
-#require 'broadway'
+require 'broadway'
 require 'haml'
 require 'json'
 
