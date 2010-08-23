@@ -1,5 +1,4 @@
 source "http://rubygems.org"
-source "http://gemcutter.org"
 
 gem "activesupport", "~> 3.0.0rc"
 gem "RedCloth"

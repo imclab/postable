@@ -6,8 +6,6 @@ require 'haml'
 require 'json'
 require 'open-uri'
 
-@db = Redis.new
-
 configure do
   LOGGER = Logger.new("tmp/development.log") 
   LOGGER.level = Logger::INFO
