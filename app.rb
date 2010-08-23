@@ -21,6 +21,7 @@ post "/" do
   puts request.inspect
   puts "=== PARAMS ==="
   puts params.inspect
+  ""
 end
 
 get "/*" do
