@@ -1,6 +1,6 @@
 gem "RedCloth"
 gem "maruku"
-gem "rack", :version => '1.2.1'
+gem "rack"
 gem "sinatra"
 gem "warden"
 gem "sinatra_more"

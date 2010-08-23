@@ -1,5 +1,4 @@
 require 'rubygems'
-gem "rack", '~> 1.2.1'
 require 'sinatra'
 require 'action_view'
 require 'insightful'
