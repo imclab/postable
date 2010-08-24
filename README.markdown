@@ -2,7 +2,7 @@
 
 > Blog Anywhere via Email
 
-## SMPT to HTTP
+## SMTP to HTTP
 
 It all boils down to that.  Convert an email into a `POST` email request, and you're golden.  But good luck setting up a scalable email server! ;)  Google has stepped in an done this for us already.
 
@@ -25,6 +25,14 @@ Once you get [Google App Engine installed](http://code.google.com/appengine/down
 Once you get the cdn setup, or the `dev_appserver.py` running, go to [http://localhost:8080/_ah/admin/inboundmail](http://localhost:8080/_ah/admin/inboundmail).  From there you an send mail.
 
 Read the rest of the source to get going.
+
+It should be able to send email pretty easily too.  Here are the [quotas/limits](http://code.google.com/appengine/docs/quotas.html) of sending/receiving emails on GAE.
+
+Heroku has a [Sendgrid Addon](http://docs.heroku.com/sendgrid#sendgrid-free) which allows you to send 200 emails/day for free.  GAE lets you send 2000 emails a day for free.  Both are probably more than enough for the one-man shop.  But with GAE you can handle incoming emails (incoming vs. outgoing emails).  You can also [send email for free on heroku using gmail](http://blog.heroku.com/archives/2009/11/9/tech_sending_email_with_gmail/).
+
+Just found [this](http://github.com/statianzo/yellowbrick.git) [blogging](http://jxs.me/2010/08/06/yellowbrick-an-email-blogging-example/).  [Sendgrid](http://wiki.sendgrid.com/doku.php). [Parse API](http://wiki.sendgrid.com/doku.php?id=parse_api).
+
+> Point a subdomain MX record to our server, we parse incoming emails and post attachments and body contents to your web forms. Useful to have uploads@subdomain.yourdomain.com or interact with users through email.
 
 ## Resources
 
