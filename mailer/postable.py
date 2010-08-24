@@ -39,7 +39,7 @@ class Postable(InboundMailHandler):
       logging.info(form_data)
       result = urlfetch.fetch(url = url, payload = form_data, method = urlfetch.POST, headers={'Content-Type': 'application/x-www-form-urlencoded'})
 
-application = webapp.WSGIApplication([LogSenderHandler.mapping()], debug = True)
+application = webapp.WSGIApplication([Postable.mapping()], debug = True)
 
 def main():
   run_wsgi_app(application)
