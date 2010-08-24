@@ -23,3 +23,12 @@ post "/" do
   puts params.inspect
   ""
 end
+
+post "/posts" do
+  puts "POSTED TO /posts"
+  puts "=== REQUEST ==="
+  puts request.inspect
+  puts "=== PARAMS ==="
+  puts params.inspect
+  ""
+end
